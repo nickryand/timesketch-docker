@@ -28,10 +28,10 @@ Usage
 -----
 
 ### Webapp
-The Timesketch app should be available at the IP of the `docker-vm`. To get the UP address, echo
-the $DOCKER_HOST environment variable.
+The Timesketch app should be available at the IP of the `docker-vm` on port 5000. To get the UP address, echo
+the `$DOCKER_HOST` environment variable.
 
-http://<docker-vm ip>:5000
+Browse to: `http://<ip of docker-vm>:5000`
 
 ### Add Users
 
