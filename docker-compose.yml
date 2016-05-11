@@ -1,0 +1,18 @@
+version: "2"
+
+
+services:
+  timesketch:
+    build: .
+    links:
+      - elasticsearch
+      - redis
+    environment:
+      HOST: elasticsearch
+      PORT: 9200
+    ports:
+      - "5000:5000"
+  redis:
+    image: redis
+  elasticsearch:
+    image: elasticsearch:1.7.5
